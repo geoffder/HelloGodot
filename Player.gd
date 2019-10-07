@@ -10,12 +10,11 @@ var SCREEN_SIZE  # size of the game window
 var VELOCITY
 
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
     SCREEN_SIZE = get_viewport().size
     VELOCITY = Vector2(0, 0)
     hide()  # hide player at game start
-    start(SCREEN_SIZE / 2)  # test
+
 
 func _process(delta: float) -> void:
     """
